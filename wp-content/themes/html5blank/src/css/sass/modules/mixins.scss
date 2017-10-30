@@ -1,0 +1,44 @@
+/**
+ * modules/mixins
+ * ---
+ */
+
+
+@mixin reset-box {
+  padding: 0;
+  margin: 0;
+}
+
+
+/** Breakpoints **/
+@mixin bp($point) {
+  @if $point == papa-bear {
+    @media (max-width: 1440px) { @content; }
+  }
+  @else if $point == mama-bear {
+    @media (max-width: 1080px) { @content; }
+  }
+  @else if $point == baby-bear {
+    @media (max-width: 650px)  { @content; }
+  }
+}
+
+
+@mixin button ($bg) {
+    background: $bg;
+    &:hover {
+      background:darken($bg,8%);
+      transition: all 0.3s ease;
+    }
+    &:active {
+      background:darken($bg,25%);
+    }
+
+ border: none;
+ color:white;
+ text-decoration:none;
+ text-transform: uppercase;
+ padding:$padding-vertical-base $padding-base*2;
+ border-radius:4px;
+ font-size:1rem;
+}

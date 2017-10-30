@@ -1,0 +1,78 @@
+/**
+ * partials/nav
+ * ---
+ * Menus
+ */
+
+.mtoggle {
+  padding: $padding-base;
+  display: none !important;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  @include bp(baby-bear) {
+    display:block !important;
+  }
+}
+
+.nav {
+  background-color: $secondary-color;
+  z-index: 9999;
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    @include reset-box ;
+    }
+  @include bp(baby-bear) {
+    max-width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: max-width .3s ease-in-out;
+    ul {
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 67%;
+        width: 100vw;
+      }
+    }
+  }
+.nav-open {
+      max-width: 90vw;
+  }
+
+.m-menu {
+    display:none;
+    color: #FFF;
+
+    @include bp(baby-bear) {
+      display: block;
+    }
+
+    .open-menu-logo {
+      width: 150px;
+    }
+  }
+
+
+
+
+
+.menu {}
+
+.sub-menu {}
+
+.menu-item {
+  padding: $padding-base $padding-base;
+  flex: 1;
+  align-self: center;
+  text-align: center;
+  a {
+  color: #fff;
+}
+}

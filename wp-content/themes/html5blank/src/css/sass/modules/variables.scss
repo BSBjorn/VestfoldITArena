@@ -1,0 +1,77 @@
+/**
+ * modules/variables
+ * ---
+ */
+
+
+/**
+ * Typography
+ */
+
+
+ @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600|Raleway:300,600');
+
+$font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+$font-weight-base: 400;
+$link-decoration: none;
+$link-hover-decoration: $link-decoration;
+$dt-font-weight: $font-weight-base;
+$text-muted: #F2f2f2;
+
+
+$headings-margin-bottom: 1.5rem !default;
+
+$h1-font-size:   2.5rem !default;
+$h2-font-size:   2rem !default;
+$h3-font-size:   1.75rem !default;
+$h4-font-size:   1.5rem !default;
+$h5-font-size:   1.25rem !default;
+$h6-font-size:   1rem !default;
+
+
+$paragraph-margin-bottom: 1rem !default;
+
+$table-cell-padding:    .75rem !default;
+$table-cell-padding-sm: .3rem !default;
+
+/**
+ * Colors
+ */
+
+/** Brand Colors**/
+$main-color: #CE5258; //Red
+$secondary-color: #27466B; // Dark Blue
+$third-color: #698CA9; // Light Blue
+$light-gray: #FAFAFA;
+$medium-gray: #7F7F7F;
+
+
+
+$text-color: $secondary-color;
+$link-color: $main-color;
+$link-hover-color: darken($link-color, 15%);
+
+$body-bg: $light-gray;
+$body-color: $text-color; //Reset text color
+$selection-bg: #04A4CC;
+
+
+/**
+ * Grid
+ */
+
+$wrapper-width: 1080px;
+
+$padding-base: 1rem;
+$margin-base: 1.2rem;
+
+$margin-base-large: 5rem;
+
+$padding-horizontal-base: 5px;
+$padding-vertical-base: 5px;
+$margin-horizontal-base: 5px;
+$margin-vertical-base: 5px;
+$margin-horizontal-large: 15px;
+$margin-vertical-large: 15px;

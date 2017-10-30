@@ -1,0 +1,56 @@
+/**
+ * partials/page
+ * ---
+ * Pages
+ */
+
+
+.page-header-img {
+  width: 100%;
+}
+
+.front-page {
+  font-size: 1.2em;
+  max-width: 640px;
+  margin: $margin-base-large auto $margin-base-large*2;
+}
+
+.signup-form {
+  margin: $margin-base-large auto $margin-base-large*2;
+}
+
+
+/**
+page template: members
+**/
+
+.members {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: $margin-base-large/2;
+  grid-row-gap: $margin-base-large/2;
+  .member {
+    display: grid;
+    justify-items:center;
+    align-items: center;
+    grid-template-rows: 180px 100px 100px;
+    grid-row-gap: 5px;
+
+    img {
+      max-height: 100%;
+      width: auto;
+    }
+    h2 {
+      text-align: center;
+    }
+    .member-info {
+    justify-self: start;
+    }
+  }
+  @include bp(mama-bear) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include bp (baby-bear) {
+    grid-template-columns: 1fr;
+  }
+}

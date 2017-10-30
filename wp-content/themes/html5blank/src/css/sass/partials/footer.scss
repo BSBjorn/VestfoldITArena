@@ -1,0 +1,20 @@
+/**
+ * partials/footer
+ * ---
+ */
+
+
+.footer {
+  padding: $padding-base*5 $padding-base $padding-base*3;
+  color: #FFF;
+  background-color: $third-color;
+  .inner-footer {
+    margin-bottom: $margin-base*2;
+  }
+  a {
+    color: #FFF;
+  }
+  .copyright {
+    font-size: 0.8em;
+  }
+}

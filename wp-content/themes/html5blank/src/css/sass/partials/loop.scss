@@ -1,0 +1,29 @@
+/**
+*
+* Loop styling
+*
+**/
+
+.loop-post {
+   background-color: $light-gray;
+   padding: $padding-base;
+   height: 100%;
+}
+
+.loop-post-title {
+  min-height: 4rem;
+}
+.loop-post-excerpt {
+  height: 8rem;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.loop-thumb {
+  width: 100%;
+  margin-bottom: $margin-base;
+}
+
+.all-articles {
+  font-size: 1.2em;
+  margin: 8rem auto;
+}

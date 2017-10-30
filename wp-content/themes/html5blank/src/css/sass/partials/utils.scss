@@ -1,0 +1,60 @@
+/**
+ * partials/utils
+ * ---
+ * Utils classes
+ */
+
+
+// clearfix: http://nicolasgallagher.com/micro-clearfix-hack/
+.clear {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+.reset-box {
+  @include reset-box;
+}
+
+
+// Buttons
+
+.btn-red {
+  @include button($main-color)
+}
+.btn-blue {
+  @include button($secondary-color)
+}
+.btn-light-blue {
+  @include button($third-color)
+}
+
+
+// Inputs
+textarea, input[type]:not([type=search]):not([type=url]):not([type=hidden]):not([type=submit]) {
+
+  border: none;
+  background-color: $light-gray;
+  text-decoration:none;
+  padding:$padding-vertical-base $padding-base;
+  border-radius:4px;
+  font-size:1rem;
+
+  max-width: 100%;
+  width: 100%;
+  transition: all .5s ease-in-out;
+
+  &:active, &:focus {
+    box-shadow: 0 0 2px $medium-gray;
+   }
+}
+
+form {
+  width: 100%;
+}
