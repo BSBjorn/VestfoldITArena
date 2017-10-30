@@ -28,7 +28,7 @@ page template: members
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: $margin-base-large/2;
-  grid-row-gap: $margin-base-large/2;
+  grid-row-gap: $margin-base-large;
   .member {
     display: grid;
     justify-items:center;
@@ -39,12 +39,12 @@ page template: members
     img {
       max-height: 100%;
       width: auto;
+      max-width: 200px;
     }
     h2 {
       text-align: center;
     }
     .member-info {
-    justify-self: start;
     }
   }
   @include bp(mama-bear) {
