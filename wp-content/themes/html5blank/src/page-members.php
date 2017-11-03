@@ -24,6 +24,7 @@
               $tlf = get_sub_field('kontak_telefon');
               $logo = get_sub_field('member_logo');
               $size = 'full';
+							$description = get_sub_field('beskrivelse');
             ?>
 
 
@@ -36,6 +37,11 @@
                   <a href="<?php echo $url; ?>"> <i class="fa fa-globe"></i> <?php echo $url; ?></a><br/>
                   <a href="tel:<?php echo $tlf;?>"><i class="fa fa-phone"></i> <?php echo $tlf; ?></a>
                 </div>
+								<?php if ($description) : ?>
+									<div class="member-description">
+									<?php echo $description; ?>
+								</div>
+								<?php endif; ?>
               </div>
 
 

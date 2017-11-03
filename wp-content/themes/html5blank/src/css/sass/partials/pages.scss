@@ -46,6 +46,10 @@ page template: members
     }
     .member-info {
     }
+    .member-description{
+      font-size: .8em;
+      color: $medium-gray;
+    }
   }
   @include bp(mama-bear) {
     grid-template-columns: 1fr 1fr;
