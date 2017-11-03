@@ -21,6 +21,12 @@ foreach ( $postslist as $post ) :
     <!-- post title -->
     <h6 class="loop-post-title uppercase">
       <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+      <?php
+      $event_date = tribe_events_event_schedule_details($event_id);
+
+      if ( get_post_type() == 'tribe_events') {
+        echo '<br/>'. $event_date;
+        } ?>
     </h6>
 
      <div class="loop-post-excerpt"><?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?></div>
@@ -39,7 +45,7 @@ foreach ( $postslist as $post ) :
     <!-- post details -->
     <p><span class="date">
       <time datetime="<?php the_time('Y-m-d'); ?> <?php the_time('H:i'); ?>">
-      <i class="fa fa-clock-o" aria-hidden="true"> </i> <?php the_date('d.m.y'); ?>
+        <i class="fa fa-clock-o" aria-hidden="true"> </i>  <?php the_date('d.m.y'); ?>
       </time>
     </span>
     <a class="view-article alignright nomargin" href="<?php the_permalink(); ?>"><?php echo __('View Article', 'html5blank'); ?> <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
