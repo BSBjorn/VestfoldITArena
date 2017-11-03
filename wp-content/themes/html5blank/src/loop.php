@@ -9,6 +9,12 @@
 		<!-- post title -->
 		<h6 class="loop-post-title uppercase">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+			<?php
+      $event_date = tribe_events_event_schedule_details($event_id);
+
+      if ( get_post_type() == 'tribe_events') {
+        echo '<br/>'. $event_date;
+        } ?>
 		</h6>
 
 		 <div class="loop-post-excerpt"><?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?></div>
