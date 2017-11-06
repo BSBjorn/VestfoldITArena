@@ -1,2 +1,4 @@
 #CONNECTION files
 .ftpconfig
+
+wp-config.php
